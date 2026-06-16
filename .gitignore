@@ -5,9 +5,6 @@ dist/
 # Dependencies
 node_modules/
 
-# Pnpm workspace (auto-generated)
-pnpm-workspace.yaml
-
 # Environment variables
 .env
 .env.*
