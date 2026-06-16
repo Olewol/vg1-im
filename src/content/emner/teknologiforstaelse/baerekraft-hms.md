@@ -2,7 +2,7 @@
 title: "Bærekraft og HMS i teknologibransjen"
 emne: baerekraft-hms
 fag: teknologiforstaelse
-uke: [19, 20]
+uke: [15, 16]
 kompetansemaal: [tf-07, tf-08]
 kilder:
   - https://ndla.no/f/teknologiforstaelse-im-ikm-vg1/087c23101fc5

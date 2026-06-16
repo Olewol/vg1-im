@@ -3,7 +3,7 @@ title: "Mediekommunikasjon — Budskap, målgrupper og kanaler"
 emne: mediekommunikasjon
 fag: produksjon-historiefortelling
 uke: [23]
-kompetansemaal: [ph-11]
+kompetansemaal: ["ph-02"]
 kilder:
   - https://ndla.no/f/produksjon-og-historiefortelling-im-ikm-vg1/6b4ff88031e7
 tags: [kommunikasjon, målgruppe, budskap, retorikk, kanaler]

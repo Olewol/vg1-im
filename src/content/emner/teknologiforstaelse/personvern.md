@@ -2,7 +2,7 @@
 title: "Personvern og regelverk"
 emne: personvern
 fag: teknologiforstaelse
-uke: [48, 49]
+uke: [47, 48]
 kompetansemaal: [tf-11, tf-12]
 kilder:
   - https://ndla.no/f/teknologiforstaelse-im-ikm-vg1/087c23101fc5

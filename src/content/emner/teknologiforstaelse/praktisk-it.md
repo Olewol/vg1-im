@@ -1,9 +1,9 @@
 ---
-title: "Praktisk IT — Brukerenheter og administrasjon"
+title: "Praktisk IT — Infrastruktur, drift og administrasjon"
 emne: praktisk-it
 fag: teknologiforstaelse
-uke: [8, 9]
-kompetansemaal: [tf-04, tf-05]
+uke: [6, 9]
+kompetansemaal: [tf-05]
 kilder:
   - https://ndla.no/f/teknologiforstaelse-im-ikm-vg1/087c23101fc5
 tags: [it-drift, administrasjon, brukerenheter, konfigurasjon]

@@ -2,7 +2,7 @@
 title: "Media og medievaner — Hvordan påvirker media oss?"
 emne: media-medievaner
 fag: teknologiforstaelse
-uke: [33]
+uke: [43, 44]
 kompetansemaal: [tf-02]
 kilder:
   - https://ndla.no/f/teknologiforstaelse-im-ikm-vg1/087c23101fc5

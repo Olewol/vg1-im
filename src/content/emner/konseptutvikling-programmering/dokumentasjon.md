@@ -3,7 +3,7 @@ title: "Dokumentasjon — Hvorfor og hvordan dokumentere"
 emne: dokumentasjon
 fag: konseptutvikling-programmering
 uke: [8]
-kompetansemaal: [kp-09]
+kompetansemaal: ["kp-09"]
 kilder:
   - https://ndla.no/f/konseptutvikling-og-programmering-im-ikm-vg1/7bc23d06d79d
 tags: [dokumentasjon, feilsøking, prosesser]

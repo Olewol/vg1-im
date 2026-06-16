@@ -2,7 +2,7 @@
 title: "Datasikkerhet — Trusler, sårbarheter og beskyttelse"
 emne: datasikkerhet
 fag: teknologiforstaelse
-uke: [46, 47]
+uke: [45, 46]
 kompetansemaal: [tf-10, tf-12]
 kilder:
   - https://ndla.no/e/teknologiforstaelse-im-ikm-vg1/datasikkerhet/6f3070fa20

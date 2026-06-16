@@ -4,83 +4,99 @@ skoleaar: "2026-2027"
 veker:
 
   - uke: [34, 35]
-    tema: "Introduksjon til VG1 IM — Digital teknologi"
+    tema: "Digital teknologi — Maskinvare og programvare"
     emne: teknologiforstaelse
-    kompetansemaal: "Forstå hvordan datamaskiner og digitale systemer er bygget opp og fungerer"
+    kompetansemaal: "🎯 Forstå hvordan datamaskiner er bygget opp, hvordan data lagres, og hvilke muligheter digital teknologi gir oss i produksjon"
+    tverrfaglig: "⤻ KOP: Data, algoritmer og statistikk — hvordan teknologi behandler data (kp-07)"
     type: undervisning
 
   - uke: [36, 37]
-    tema: "Nettverk — Grunnleggende nettverksforståelse"
+    tema: "Nettverk — Lokale nettverk og subnett"
     emne: teknologiforstaelse
-    kompetansemaal: "Forstå OSI-modellen, TCP/IP, IP-adressering, subnetting"
+    kompetansemaal: "🎯 Beskrive, utforske og konfigurere datanettverk med egne subnett"
     type: undervisning
 
   - uke: [38, 39]
-    tema: "Nettverk — Internett, kommunikasjon og lagring"
+    tema: "Internett, skytjenester og digital kommunikasjon"
     emne: teknologiforstaelse
-    kompetansemaal: "Gjøre rede for hvordan internett fungerer, DNS, skytjenester"
+    kompetansemaal: "🎯 Gjøre rede for hvordan internett fungerer, og hvordan det blir brukt til kommunikasjon og lagring"
+    tverrfaglig: "⤻ KOP: Oppmerkingsspråk og stilsett — internett som plattform for publisering (kp-05)"
     type: undervisning
 
   - uke: [40]
     tema: "Høstferie"
     type: ferie
 
-  - uke: [41, 43]
-    tema: "Digital kommunikasjon — Web og HTML/CSS"
-    emne: konseptutvikling-programmering
-    kompetansemaal: "Bruke oppmerkingsspråk og stilsett i produksjoner"
-    type: undervisning
-
-  - uke: [44, 45]
-    tema: "Visuelle medier — Design og komposisjon"
-    emne: produksjon-historiefortelling
-    kompetansemaal: "Komposisjonsprinsipper, typografi, layout, virkemidler"
-    type: undervisning
-
-  - uke: [46, 47]
-    tema: "Datasikkerhet — Trusler, sårbarheter og beskyttelse"
+  - uke: [41, 42]
+    tema: "Media og medievaner — Påvirkning og refleksjon"
     emne: teknologiforstaelse
-    kompetansemaal: "Utforske og beskrive digitale trusler verdier og sårbarheter"
+    kompetansemaal: "🎯 Reflektere over og beskrive hvordan media påvirker mennesker og deres medievaner"
+    tverrfaglig: "⤻ PHF: Mediers påvirkning på meninger, oppfatninger og samfunn (ph-10)"
     type: undervisning
 
-  - uke: [48, 49]
-    tema: "Personvern og regelverk"
+  - uke: [43, 44]
+    tema: "Datasikkerhet — Trusler, verdier og sårbarheter"
     emne: teknologiforstaelse
-    kompetansemaal: "Behandle informasjon og personopplysninger i tråd med gjeldende regelverk; vurdere tiltak mot uønsket spredning av data"
+    kompetansemaal: "🎯 Utforske og beskrive digitale trusler, verdier og sårbarheter i samfunnet"
     type: undervisning
 
-  - uke: [50, 51]
-    tema: "Historiefortelling og dramaturgi"
-    emne: produksjon-historiefortelling
-    kompetansemaal: "Bruke fortelleteknikk og dramaturgi i egne produksjoner; utforske interaktiv historiefortelling"
+  - uke: [45, 46]
+    tema: "Personvern og informasjonssikkerhet"
+    emne: teknologiforstaelse
+    kompetansemaal: "🎯 Behandle informasjon og personopplysninger i tråd med regelverk, og vurdere tiltak mot uønsket dataspredning"
+    tverrfaglig: "⤻ PHF: Kildekritikk og etisk refleksjon i egen produksjon (ph-07) · ⤻ KOP: Anvendelse av regelverk og etikk (kp-01)"
     type: undervisning
+
+  - uke: [47, 48]
+    tema: "Nye opplevelser med teknologi — AR, VR og KI"
+    emne: teknologiforstaelse
+    kompetansemaal: "🎯 Utforske og beskrive hvordan teknologi kan formidle nye uttrykk og gi nye opplevelser"
+    tverrfaglig: "⤻ PHF: Interaktiv historiefortelling som skaper engasjement og nye uttrykk (ph-08)"
+    type: undervisning
+
+  - uke: [49, 50]
+    tema: "Bransjefaglige metoder og relevant utstyr"
+    emne: teknologiforstaelse
+    kompetansemaal: "🎯 Kjenne til og anvende bransjefaglige metoder og relevant utstyr i produksjon"
+    tverrfaglig: "⤻ PHF: Produsere og kommunisere innhold i ulike sjangre (ph-01)"
+    type: undervisning
+
+  - uke: [51]
+    tema: "Praktisk prosjekt — Juleproduksjon"
+    emne: teknologiforstaelse
+    kompetansemaal: "🎯 Planlegge og gjennomføre en produksjon med bransjefaglige metoder"
+    tverrfaglig: "⤻ PHF: Budskap og målgrupper (ph-02) · ⤻ KOP: Praktisk programmering (kp-03)"
+    type: prosjekt
 
   - uke: [52, 1]
     tema: "Juleferie"
     type: ferie
 
   - uke: [2, 3]
-    tema: "Programmering — Introduksjon til koding"
-    emne: konseptutvikling-programmering
-    kompetansemaal: "Bruke programmering til å løse praktiske utfordringer"
+    tema: "Algoritmer, data og kunstig intelligens"
+    emne: teknologiforstaelse
+    kompetansemaal: "🎯 Utforske hvordan teknologi kan formidle nye uttrykk — med særlig vekt på algoritmer, dataanalyse og KI"
+    tverrfaglig: "⤻ KOP: Hvordan teknologi behandler data, algoritmer og statistikk (kp-07)"
     type: undervisning
 
   - uke: [4, 5]
-    tema: "Videoproduksjon — Planlegging og gjennomføring"
-    emne: produksjon-historiefortelling
-    kompetansemaal: "Produsere og kommunisere innhold innenfor ulike sjangre; utvikle budskap tilpasset målgrupper"
+    tema: "Sanntidsproduksjon — Planlegging og gjennomføring"
+    emne: teknologiforstaelse
+    kompetansemaal: "🎯 Planlegge og gjennomføre sanntidsproduksjoner med relevant utstyr"
+    tverrfaglig: "⤻ PHF: Produsere innhold til visuelle og auditive medier (ph-01) · ⤻ PHF: Fortelleteknikk og dramaturgi (ph-06)"
     type: undervisning
 
   - uke: [6, 7]
-    tema: "Sanntidsproduksjon og bransjefaglige metoder"
+    tema: "Brukerenheter og administrasjonsplattformer"
     emne: teknologiforstaelse
-    kompetansemaal: "Planlegge og gjennomføre sanntidsproduksjoner; kjenne til og anvende bransjefaglige metoder"
+    kompetansemaal: "🎯 Administrere brukerenheter og koble dem til sentrale administrasjonsplattformer"
     type: undervisning
 
   - uke: [8, 9]
-    tema: "Brukerenheter og administrasjonsplattformer"
+    tema: "Praktisk IT — Infrastruktur, drift og dokumentasjon"
     emne: teknologiforstaelse
-    kompetansemaal: "Administrere brukerenheter og koble dem til sentrale administrasjonsplattformer; konfigurere datanettverk med subnett"
+    kompetansemaal: "🎯 Anvende bransjefaglige metoder for oppsett, konfigurasjon og vedlikehold av IT-systemer"
+    tverrfaglig: "⤻ KOP: Dokumentasjon av faglige prosesser (kp-09)"
     type: undervisning
 
   - uke: [10]
@@ -88,9 +104,10 @@ veker:
     type: ferie
 
   - uke: [11, 12]
-    tema: "Konseptutvikling — Apputvikling og prototyping"
-    emne: konseptutvikling-programmering
-    kompetansemaal: "Visualisere og utvikle konsepter tilpasset ulike plattformer; forstå sammenhenger mellom løsninger kundens behov og brukeres forutsetninger"
+    tema: "Sikkerhet i dybden — Risikovurdering og beredskap"
+    emne: teknologiforstaelse
+    kompetansemaal: "🎯 Vurdere, anbefale og kvalitetssikre tiltak som reduserer risiko for uønsket spredning av data"
+    tverrfaglig: "⤻ KOP: Ansvarlig bruk og formidling av innhold — regelverk og etikk (kp-01)"
     type: undervisning
 
   - uke: [13, 14]
@@ -98,42 +115,42 @@ veker:
     type: ferie
 
   - uke: [15, 16]
-    tema: "Databaser — Modellering og SQL"
-    emne: konseptutvikling-programmering
-    kompetansemaal: "Anvende verktøy for datamodellering i oppbygging av databaser"
+    tema: "Bærekraft og HMS i teknologibransjen"
+    emne: teknologiforstaelse
+    kompetansemaal: "🎯 Gjøre rede for hvordan bærekraft påvirker anskaffelse, drift og avhending, og gjennomføre HMS-arbeid"
+    notat: ["Bærekraft i IT-bransjen", "Avhending av utstyr", "Arbeidsmiljø og ergonomi"]
     type: undervisning
 
   - uke: [17, 18]
-    tema: "Teknologi og nye opplevelser"
+    tema: "Teknologi og samfunn — Etikk, demokrati og deltakelse"
     emne: teknologiforstaelse
-    kompetansemaal: "Utforske og beskrive hvordan teknologi kan formidle nye uttrykk og gi nye opplevelser"
+    kompetansemaal: "🎯 Reflektere over hvordan teknologi påvirker samfunn, demokrati og vår oppfatning av verden"
+    tverrfaglig: "⤻ PHF: Teknologi, sikkerhet og demokratiske prosesser (ph-11) · ⤻ PHF: Mediers påvirkning på meninger (ph-10)"
     type: undervisning
 
   - uke: [19, 20]
-    tema: "Bærekraft og HMS i teknologibransjen"
-    emne: teknologiforstaelse
-    kompetansemaal: "Gjøre rede for hvordan bærekraft påvirker anskaffelse drift og avhending; gjennomføre og dokumentere HMS-arbeid"
-    type: undervisning
-
-  - uke: [21, 22]
-    tema: "Tverrfaglig prosjekt — Medieproduksjon"
+    tema: "Tverrfaglig prosjekt — Medieproduksjon med teknologi"
     emne: null
-    kompetansemaal: "Tverrfaglig samarbeid mellom alle tre programfag"
+    kompetansemaal: "🎯 Planlegge, produsere og presentere et tverrfaglig prosjekt som kombinerer alle tre programfag"
+    tverrfaglig: "⤻ TF: Sanntidsproduksjon og bransjefaglige metoder · ⤻ PHF: Innholdsproduksjon og budskap · ⤻ KOP: Programmering og dokumentasjon"
     type: prosjekt
 
+  - uke: [21, 22]
+    tema: "Utforsking av nye og fremvoksende teknologier"
+    emne: teknologiforstaelse
+    kompetansemaal: "🎯 Utforske og formidle kunnskap om teknologiendringer ved å bruke ulike kilder"
+    tverrfaglig: "⤻ PHF: Tilegne seg kunnskap om endringer innen teknologi og programvare (ph-09)"
+    type: undervisning
+
   - uke: [23, 24]
-    tema: "Medier makt og samfunn — Etikk og refleksjon"
-    emne: produksjon-historiefortelling
-    kompetansemaal: "Gjøre rede for hvordan medier påvirker meninger; reflektere over etikk og teknologi i demokratiske prosesser"
+    tema: "Arbeidsliv, yrkesrolle og samarbeid"
+    emne: teknologiforstaelse
+    kompetansemaal: "🎯 Anvende bransjefaglige metoder og forstå egen yrkesrolle i teknologibransjen"
+    tverrfaglig: "⤻ PHF: Partene i arbeidslivet og samarbeid om et bedre arbeidsliv (ph-12)"
     type: undervisning
 
   - uke: [25]
-    tema: "Siste skoleuke — Oppsummering og vurdering"
+    tema: "Oppsummering, refleksjon og vurdering"
     emne: null
     type: undervisning
 ---
-
-# Årsplan for VG1 Informasjonsteknologi og Medieproduksjon
-
-Skoleåret 2026–2027. Første skoledag 17. august, siste skoledag 17. juni.
-190 skoledager fordelt på tre programfag: Teknologiforståelse, Produksjon og historiefortelling, og Konseptutvikling og programmering.

@@ -3,7 +3,7 @@ title: "Database — Modellering, SQL og datalagring"
 emne: database
 fag: konseptutvikling-programmering
 uke: [15, 16]
-kompetansemaal: [kp-04]
+kompetansemaal: ["kp-04"]
 kilder:
   - https://ndla.no/f/konseptutvikling-og-programmering-im-ikm-vg1/7bc23d06d79d
 tags: [database, sql, modellering, databaser, normalisering]

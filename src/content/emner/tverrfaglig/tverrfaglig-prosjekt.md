@@ -3,7 +3,7 @@ title: "Tverrfaglig prosjekt — Medieproduksjon"
 emne: tverrfaglig-prosjekt
 fag: tverrfaglig
 uke: [21, 22]
-kompetansemaal: [tf-01, ph-10, kp-03]
+kompetansemaal: ["tf-01", "ph-01", "kp-03"]
 kilder:
   - https://ndla.no/e/teknologiforstaelse-im-ikm-vg1/tverrfaglige-prosjekter---informasjonsteknologi-og-medieproduksjon/ec9088afb9
 tags: [tverrfaglig, prosjekt, samarbeid]

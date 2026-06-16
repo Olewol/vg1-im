@@ -3,7 +3,7 @@ title: "Kilder og kildekritikk"
 emne: kilder-kildekritikk
 fag: produksjon-historiefortelling
 uke: [48]
-kompetansemaal: [ph-05, ph-08]
+kompetansemaal: ["ph-07", "ph-10"]
 kilder:
   - https://ndla.no/f/produksjon-og-historiefortelling-im-ikm-vg1/6b4ff88031e7
 tags: [kildekritikk, kilder, etikk, regelverk, opphavsrett]

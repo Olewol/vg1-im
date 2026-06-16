@@ -3,7 +3,7 @@ title: "Interaktivitet og historiefortelling"
 emne: interaktivitet-historiefortelling
 fag: produksjon-historiefortelling
 uke: [50]
-kompetansemaal: [ph-06]
+kompetansemaal: ["ph-08"]
 kilder:
   - https://ndla.no/f/produksjon-og-historiefortelling-im-ikm-vg1/6b4ff88031e7
 tags: [interaktivitet, twine, historiefortelling, spill]

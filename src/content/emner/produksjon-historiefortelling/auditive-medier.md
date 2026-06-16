@@ -3,7 +3,7 @@ title: "Auditive medier — Lydproduksjon og podcast"
 emne: auditive-medier
 fag: produksjon-historiefortelling
 uke: [38]
-kompetansemaal: [ph-10]
+kompetansemaal: ["ph-01"]
 kilder:
   - https://ndla.no/f/produksjon-og-historiefortelling-im-ikm-vg1/6b4ff88031e7
 tags: [lyd, podcast, lydproduksjon, mikrofon, redigering]

@@ -3,7 +3,7 @@ title: "Visuelle medier — Design, komposisjon og layout"
 emne: visuelle-medier
 fag: produksjon-historiefortelling
 uke: [44, 45]
-kompetansemaal: [kp-01, kp-02]
+kompetansemaal: ["ph-03", "ph-04"]
 kilder:
   - https://ndla.no/f/produksjon-og-historiefortelling-im-ikm-vg1/6b4ff88031e7
 tags: [design, komposisjon, layout, typografi, fargeteori]

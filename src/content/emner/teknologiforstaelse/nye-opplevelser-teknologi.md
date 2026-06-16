@@ -1,8 +1,8 @@
 ---
-title: "Nye opplevelser med teknologi"
+title: "Nye opplevelser med teknologi — AR, VR og kunstig intelligens"
 emne: nye-opplevelser-teknologi
 fag: teknologiforstaelse
-uke: [17, 18]
+uke: [47, 48]
 kompetansemaal: [tf-06]
 kilder:
   - https://ndla.no/f/teknologiforstaelse-im-ikm-vg1/087c23101fc5

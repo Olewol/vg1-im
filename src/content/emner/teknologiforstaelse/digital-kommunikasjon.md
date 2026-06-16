@@ -1,8 +1,8 @@
 ---
-title: "Digital kommunikasjon — Internett, DNS og skytjenester"
+title: "Digital kommunikasjon — Verktøy og kanaler for digital samhandling"
 emne: digital-kommunikasjon
 fag: teknologiforstaelse
-uke: [38, 39]
+uke: [23, 24]
 kompetansemaal: [tf-09]
 kilder:
   - https://ndla.no/f/teknologiforstaelse-im-ikm-vg1/087c23101fc5

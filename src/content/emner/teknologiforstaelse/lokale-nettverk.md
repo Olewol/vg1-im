@@ -3,7 +3,7 @@ title: "Lokale nettverk — Grunnleggende nettverksforståelse"
 emne: lokale-nettverk
 fag: teknologiforstaelse
 uke: [36, 37]
-kompetansemaal: [tf-04, tf-09]
+kompetansemaal: [tf-04]
 kilder:
   - https://ndla.no/f/teknologiforstaelse-im-ikm-vg1/087c23101fc5
 tags: [nettverk, ip, subnetting, osi-modellen, tcp-ip]

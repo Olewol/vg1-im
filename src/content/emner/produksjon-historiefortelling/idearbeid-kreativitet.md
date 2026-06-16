@@ -3,7 +3,7 @@ title: "Idéarbeid og kreativitet"
 emne: idéarbeid-kreativitet
 fag: produksjon-historiefortelling
 uke: [34]
-kompetansemaal: [ph-03]
+kompetansemaal: ["ph-05"]
 kilder:
   - https://ndla.no/f/produksjon-og-historiefortelling-im-ikm-vg1/6b4ff88031e7
 tags: [idéarbeid, kreativitet, brainstorming, innovasjon]

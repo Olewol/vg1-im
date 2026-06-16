@@ -3,7 +3,7 @@ title: "Apputvikling og prototyping"
 emne: apputvikling
 fag: konseptutvikling-programmering
 uke: [11, 12]
-kompetansemaal: [kp-06, kp-02]
+kompetansemaal: ["kp-06", "kp-02"]
 kilder:
   - https://ndla.no/f/konseptutvikling-og-programmering-im-ikm-vg1/7bc23d06d79d
 tags: [apputvikling, prototyping, brukeropplevelse, figma]

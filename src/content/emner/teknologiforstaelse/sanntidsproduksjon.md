@@ -2,7 +2,7 @@
 title: "Sanntidsproduksjon og bransjefaglige metoder"
 emne: sanntidsproduksjon
 fag: teknologiforstaelse
-uke: [6, 7]
+uke: [4, 5]
 kompetansemaal: [tf-01, tf-03]
 kilder:
   - https://ndla.no/f/teknologiforstaelse-im-ikm-vg1/087c23101fc5

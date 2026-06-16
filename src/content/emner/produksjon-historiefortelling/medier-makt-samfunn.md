@@ -3,7 +3,7 @@ title: "Medier, makt og samfunn"
 emne: medier-makt-samfunn
 fag: produksjon-historiefortelling
 uke: [23, 24]
-kompetansemaal: [ph-08, ph-09]
+kompetansemaal: ["ph-10", "ph-11"]
 kilder:
   - https://ndla.no/f/produksjon-og-historiefortelling-im-ikm-vg1/6b4ff88031e7
 tags: [medier, makt, demokrati, etikk, samfunn]

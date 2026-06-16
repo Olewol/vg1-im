@@ -10,6 +10,7 @@ const aarsplan = defineCollection({
       tema: z.string(),
       emne: z.string().nullable().optional(),
       kompetansemaal: z.string().optional().default(''),
+      tverrfaglig: z.string().optional().default(''),
       notat: z.array(z.string()).optional().default([]),
       ressurstal: z.number().optional().default(0),
       oppgavetar: z.number().optional().default(0),

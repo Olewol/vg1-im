@@ -3,7 +3,7 @@ title: "Programmering — Introduksjon til koding"
 emne: programmering
 fag: konseptutvikling-programmering
 uke: [2, 3]
-kompetansemaal: [kp-03, kp-08, kp-07]
+kompetansemaal: ["kp-03", "kp-08", "kp-07"]
 kilder:
   - https://ndla.no/f/konseptutvikling-og-programmering-im-ikm-vg1/7bc23d06d79d
 tags: [programmering, python, javascript, koding, algoritmer]

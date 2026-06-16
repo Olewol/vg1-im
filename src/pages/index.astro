@@ -101,6 +101,9 @@ const fagProgression = [
                 {v.kompetansemaal && !isFerie && (
                   <div style="font-size:13px;color:var(--text2);margin-top:6px;">{v.kompetansemaal}</div>
                 )}
+                {v.tverrfaglig && !isFerie && (
+                  <div style="font-size:12px;color:var(--accent);margin-top:4px;padding:4px 8px;background:var(--bg2);border-radius:6px;display:inline-block;">{v.tverrfaglig}</div>
+                )}
                 {isProsjekt && v.notat && v.notat.length > 0 && (
                   <div style="font-size:12px;color:var(--text3);margin-top:4px;">{v.notat.join(' • ')}</div>
                 )}

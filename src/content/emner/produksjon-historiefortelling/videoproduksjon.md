@@ -3,7 +3,7 @@ title: "Videoproduksjon — Planlegging, opptak og redigering"
 emne: videoproduksjon
 fag: produksjon-historiefortelling
 uke: [4, 5]
-kompetansemaal: [ph-10, ph-11, ph-04]
+kompetansemaal: ["ph-01", "ph-02", "ph-06"]
 kilder:
   - https://ndla.no/f/produksjon-og-historiefortelling-im-ikm-vg1/6b4ff88031e7
 tags: [video, produksjon, opptak, redigering, kamera]

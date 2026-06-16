@@ -3,7 +3,7 @@ title: "Webutvikling — HTML, CSS og publisering"
 emne: webutvikling
 fag: konseptutvikling-programmering
 uke: [41, 43]
-kompetansemaal: [kp-05, kp-01, kp-09]
+kompetansemaal: ["kp-05", "kp-09", "kp-01"]
 kilder:
   - https://ndla.no/f/konseptutvikling-og-programmering-im-ikm-vg1/7bc23d06d79d
 tags: [html, css, web, frontend, design]

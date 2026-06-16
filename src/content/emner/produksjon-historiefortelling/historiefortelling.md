@@ -3,7 +3,7 @@ title: "Historiefortelling og dramaturgi"
 emne: historiefortelling
 fag: produksjon-historiefortelling
 uke: [50, 51]
-kompetansemaal: [ph-04, ph-03]
+kompetansemaal: ["ph-06", "ph-08"]
 kilder:
   - https://ndla.no/f/produksjon-og-historiefortelling-im-ikm-vg1/6b4ff88031e7
 tags: [dramaturgi, historiefortelling, manus, fortellerteknikk]

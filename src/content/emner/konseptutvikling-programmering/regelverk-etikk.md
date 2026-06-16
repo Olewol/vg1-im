@@ -3,7 +3,7 @@ title: "Regelverk og etisk refleksjon"
 emne: regelverk-etikk
 fag: konseptutvikling-programmering
 uke: [45]
-kompetansemaal: [kp-01, kp-08]
+kompetansemaal: ["kp-01"]
 kilder:
   - https://ndla.no/f/konseptutvikling-og-programmering-im-ikm-vg1/7bc23d06d79d
 tags: [etikk, regelverk, opphavsrett, personvern]
