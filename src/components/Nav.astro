@@ -1,0 +1,41 @@
+---
+import ThemeToggle from './ThemeToggle.astro';
+import MobileNav from './MobileNav.astro';
+const { currentPath = '' } = Astro.props;
+
+const links = [
+  { href: '/vg1-im/', label: 'Årsplan' },
+  { href: '/vg1-im/teknologiforstaelse', label: 'Teknologiforståelse' },
+  { href: '/vg1-im/produksjon-historiefortelling', label: 'Produksjon og historiefortelling' },
+  { href: '/vg1-im/konseptutvikling-programmering', label: 'Konseptutv. og programmering' },
+  { href: '/vg1-im/kompetansemaal', label: 'Kompetansemål' },
+];
+---
+<nav style="position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:1px solid var(--border);backdrop-filter:blur(8px);">
+  <div style="max-width:1140px;margin:0 auto;display:flex;align-items:center;height:48px;padding:0 20px;gap:4px;">
+    <a href="/vg1-im/" style="font-size:15px;font-weight:700;letter-spacing:-.03em;color:var(--text);text-decoration:none;margin-right:18px;white-space:nowrap;">
+      VG1 IM
+    </a>
+    <div style="display:flex;gap:2px;flex:1;overflow-x:auto;" class="desktop-nav">
+      {links.map(link => {
+        const isActive = currentPath === link.href || (link.href !== '/vg1-im/' && currentPath.startsWith(link.href));
+        return (
+          <a href={link.href} style={`font-size:13px;padding:6px 12px;border-radius:6px;text-decoration:none;color:${isActive ? 'var(--accent)' : 'var(--text2)'};font-weight:${isActive ? 600 : 400};white-space:nowrap;transition:color .15s,background .15s;${isActive ? 'background:var(--accent-bg);' : ''}`}
+            onmouseover="this.style.background='var(--bg3)'" onmouseout="this.style.background=this.style.background">
+            {link.label}
+          </a>
+        );
+      })}
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;margin-left:auto;">
+      <ThemeToggle />
+      <MobileNav links={links} currentPath={currentPath} />
+    </div>
+  </div>
+</nav>
+<style is:global>
+  .desktop-nav { display: flex; }
+  @media (max-width: 700px) {
+    .desktop-nav { display: none; }
+  }
+</style>

@@ -1,0 +1,90 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getEmneColor, FAG_LABELS } from '../lib/emneColors';
+import kompetansemaalData from '../data/kompetansemaal.json';
+
+export async function getStaticPaths() {
+  const fagKeys = {
+    'teknologiforstaelse': { id: 'teknologiforstaelse', kmPrefix: 'tf' },
+    'produksjon-historiefortelling': { id: 'produksjon-historiefortelling', kmPrefix: 'ph' },
+    'konseptutvikling-programmering': { id: 'konseptutvikling-programmering', kmPrefix: 'kp' },
+  };
+  return Object.entries(fagKeys).map(([fag, info]) => ({
+    params: { fag },
+    props: { fag, info },
+  }));
+}
+
+const { fag, info } = Astro.props;
+const { color, bg } = getEmneColor(fag);
+const fagLabel = FAG_LABELS[fag] || fag;
+
+// Get relevant kompetansemaal
+const kmEntries = Object.entries(kompetansemaalData)
+  .filter(([key]) => key.startsWith(info.kmPrefix))
+  .map(([id, text]) => ({ id, text }));
+
+// Get emner for this fag
+const emner = await getCollection('emner', e => e.data.fag === fag && e.data.public !== false);
+const emneGrupper = new Map<string, typeof emner>();
+for (const e of emner) {
+  const parts = e.id.split('/');
+  const emneNavn = parts.length > 1 ? parts[1].replace(/\.mdx?$/, '') : e.id;
+  if (!emneGrupper.has(emneNavn)) emneGrupper.set(emneNavn, []);
+  emneGrupper.get(emneNavn)!.push(e);
+}
+---
+<BaseLayout title={`${fagLabel} — VG1 IM`}>
+  <div style="max-width:1140px;margin:0 auto;padding:48px 32px 80px;">
+    <div style={`display:inline-flex;align-items:center;gap:6px;background:${bg};color:${color};border:1px solid color-mix(in srgb, ${color} 30%, transparent);font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;margin-bottom:14px;`}>
+      Programfag
+    </div>
+    <h1 style="font-size:36px;font-weight:800;letter-spacing:-.025em;margin-bottom:8px;">{fagLabel}</h1>
+    <p style="font-size:16px;color:var(--text2);max-width:620px;line-height:1.65;margin-bottom:30px;">
+      140 timer fordelt på emner gjennom skoleåret.
+    </p>
+
+    <!-- Kompetansemål -->
+    <h2 style="font-size:22px;font-weight:700;margin-bottom:16px;">🎯 Kompetansemål</h2>
+    <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:36px;">
+      {kmEntries.map((km, i) => (
+        <div style="display:flex;gap:10px;align-items:flex-start;padding:12px 16px;background:var(--surface);border:1px solid var(--border);border-radius:8px;">
+          <span style="font-size:13px;font-weight:600;color:var(--accent);min-width:48px;">KM-{String(i + 1).padStart(2, '0')}</span>
+          <span style="font-size:14px;color:var(--text2);">{km.text as string}</span>
+        </div>
+      ))}
+    </div>
+
+    <!-- Emner -->
+    {emneGrupper.size > 0 && (
+      <>
+        <h2 style="font-size:22px;font-weight:700;margin-bottom:16px;">📖 Emner</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin-bottom:36px;">
+          {[...emneGrupper.entries()].map(([slug, notes]) => {
+            const note = notes[0];
+            const url = `/vg1-im/${fag}/${slug}`;
+            return (
+              <a href={url} style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:18px 20px;text-decoration:none;transition:border-color .15s;"
+                onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+                <div style="font-size:15px;font-weight:600;color:var(--text);margin-bottom:6px;">{note.data.title}</div>
+                <div style="font-size:12px;color:var(--text3);">
+                  {note.data.uke.length > 0 && <span>📅 Uke {note.data.uke.join(', ')}</span>}
+                  {note.data.tags.length > 0 && <span> · {note.data.tags.slice(0, 3).join(', ')}</span>}
+                </div>
+              </a>
+            );
+          })}
+        </div>
+      </>
+    )}
+
+    {emneGrupper.size === 0 && (
+      <div style="padding:40px;text-align:center;background:var(--surface);border:1px solid var(--border);border-radius:12px;color:var(--text3);">
+        <div style="font-size:48px;margin-bottom:12px;">📝</div>
+        <div style="font-size:16px;font-weight:600;color:var(--text2);margin-bottom:8px;">Innhold under arbeid</div>
+        <div style="font-size:14px;">Emnesider for dette faget blir lagt til fortløpende.</div>
+      </div>
+    )}
+  </div>
+</BaseLayout>

@@ -1,0 +1,114 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getEmneColor, FAG_LABELS } from '../lib/emneColors';
+import { getEntry } from 'astro:content';
+
+const aarsplan = await getEntry('aarsplan', 'aarsplan');
+const veker = aarsplan?.data?.veker ?? [];
+
+const haust = veker.filter(v => Math.min(...v.uke) >= 34 && Math.min(...v.uke) <= 51);
+const vaar  = veker.filter(v => Math.min(...v.uke) < 34 || Math.min(...v.uke) > 51);
+
+const fagProgression = [
+  { fag: 'teknologiforstaelse',     uker: 'Hele året — 140t', desc: 'Grunnleggende forståelse av teknologi, nettverk, sikkerhet og digitale verktøy. Går som en rød tråd gjennom hele skoleåret.' },
+  { fag: 'produksjon-historiefortelling', uker: 'Perioder — 140t', desc: 'Planlegge, produsere og formidle innhold i ulike sjangre og medier. Historiefortelling, dramaturgi og visuell kommunikasjon.' },
+  { fag: 'konseptutvikling-programmering', uker: 'Perioder — 140t', desc: 'Programmere, modellere data, utvikle konsepter og bygge løsninger tilpasset brukerbehov og plattformer.' },
+];
+---
+<BaseLayout title="Årsplan — VG1 Informasjonsteknologi og Medieproduksjon">
+  <div style="max-width:1140px;margin:0 auto;padding:48px 32px 80px;">
+
+    <div style="font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:10px;">
+      Østfold fylkeskommune — Skoleåret 2026–2027
+    </div>
+    <h1 style="font-size:36px;font-weight:800;letter-spacing:-.025em;margin-bottom:8px;">Årsplan — VG1 IM</h1>
+    <p style="font-size:16px;color:var(--text2);max-width:620px;line-height:1.65;margin-bottom:10px;">
+      Informasjonsteknologi og Medieproduksjon. Første skoledag 17. august — siste skoledag 17. juni.
+    </p>
+
+    <!-- Fagoversikt -->
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px 28px;margin-bottom:36px;">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text3);margin-bottom:16px;">📚 Programfag — 140 timer per fag</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;">
+        {fagProgression.map((p, i) => {
+          const { color, bg } = getEmneColor(p.fag);
+          return (
+            <div style="display:flex;gap:12px;align-items:flex-start;">
+              <div style={`width:36px;height:36px;border-radius:10px;background:${bg};border:1px solid color-mix(in srgb, ${color} 30%, transparent);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:${color};flex-shrink:0;`}>{i + 1}</div>
+              <div style="flex:1;min-width:0;">
+                <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+                  <span style="font-size:14px;font-weight:600;color:var(--text);">
+                    <a href={`/vg1-im/${p.fag}`} style="color:var(--text);text-decoration:none;">{FAG_LABELS[p.fag] || p.fag}</a>
+                  </span>
+                  <span style="font-size:11px;color:var(--text3);background:var(--bg3);padding:2px 8px;border-radius:4px;">{p.uker}</span>
+                </div>
+                <div style="font-size:13px;color:var(--text2);line-height:1.5;margin-top:4px;">{p.desc}</div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+
+    <!-- Legend -->
+    <div style="display:flex;gap:18px;flex-wrap:wrap;margin-bottom:28px;" role="list" aria-label="Fagforklaring">
+      {Object.keys(FAG_LABELS).filter(k => k !== 'kompetansemaal').map(fag => {
+        const { color } = getEmneColor(fag);
+        return (
+          <div style="display:flex;align-items:center;gap:7px;font-size:13px;color:var(--text2);" role="listitem">
+            <div style={`width:9px;height:9px;border-radius:50%;background:${color};flex-shrink:0;`}></div>
+            {FAG_LABELS[fag]}
+          </div>
+        );
+      })}
+    </div>
+
+    <!-- Ferie-oversikt -->
+    <details style="margin-bottom:28px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 18px;">
+      <summary style="font-size:13px;font-weight:600;color:var(--text2);cursor:pointer;">📅 Skolerute Østfold 2026–2027 — {veker.filter(v => v.type === 'ferie').length} ferieperioder</summary>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px;margin-top:10px;font-size:13px;color:var(--text2);">
+        <div>🏁 <strong>Første skoledag:</strong> 17. august (uke 34)</div>
+        {veker.filter(v => v.type === 'ferie').map(v => (
+          <div>📌 <strong>{v.tema}:</strong> Uke {v.uke.join('–')}</div>
+        ))}
+        <div>🏁 <strong>Siste skoledag:</strong> 17. juni (uke 25)</div>
+      </div>
+    </details>
+
+    <!-- Årsplan uke for uke -->
+    {[haust, vaar].map((del, di) => (
+      <div style="margin-bottom:32px;">
+        <h2 style="font-size:20px;font-weight:700;margin-bottom:16px;">{di === 0 ? '🍂 Høstsemesteret' : '🌸 Vårsemesteret'}</h2>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          {del.map(v => {
+            const emne = v.emne || '';
+            const { color, bg } = getEmneColor(emne);
+            const isFerie = v.type === 'ferie';
+            const isEksamen = v.type === 'eksamen';
+            const isProsjekt = v.type === 'prosjekt';
+            let style = 'background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px 20px;';
+            if (isFerie) style += 'opacity:.6;';
+            if (isProsjekt) style += `border-left:3px solid ${color};`;
+            return (
+              <div style={style}>
+                <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+                  <span style="font-size:12px;font-weight:700;color:var(--text3);min-width:70px;">Uke {v.uke.join('–')}</span>
+                  {!isFerie && emne && (
+                    <span style={`font-size:11px;font-weight:600;background:${bg};color:${color};padding:2px 10px;border-radius:4px;`}>{FAG_LABELS[emne] || emne}</span>
+                  )}
+                  <strong style="font-size:14px;flex:1;">{v.tema}</strong>
+                </div>
+                {v.kompetansemaal && !isFerie && (
+                  <div style="font-size:13px;color:var(--text2);margin-top:6px;">{v.kompetansemaal}</div>
+                )}
+                {isProsjekt && v.notat && v.notat.length > 0 && (
+                  <div style="font-size:12px;color:var(--text3);margin-top:4px;">{v.notat.join(' • ')}</div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    ))}
+  </div>
+</BaseLayout>

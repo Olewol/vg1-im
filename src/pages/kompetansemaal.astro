@@ -1,0 +1,78 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getEmneColor, FAG_LABELS } from '../lib/emneColors';
+import kompetansemaalData from '../data/kompetansemaal.json';
+
+const emner = await getCollection('emner', e => e.data.public !== false);
+
+// Group by kompetansemaal
+const grouped: Record<string, typeof emner> = {};
+for (const note of emner) {
+  let kmTags = note.data.kompetansemaal;
+  if (!kmTags) continue;
+  if (!Array.isArray(kmTags)) kmTags = [kmTags];
+  
+  for (const km of kmTags) {
+    if (!km) continue;
+    if (!grouped[km]) grouped[km] = [];
+    grouped[km].push(note);
+  }
+}
+
+// Organize by fag
+const fagKm: Record<string, [string, string][]> = {
+  'teknologiforstaelse': [],
+  'produksjon-historiefortelling': [],
+  'konseptutvikling-programmering': [],
+};
+
+const prefixes: Record<string, string> = { tf: 'teknologiforstaelse', ph: 'produksjon-historiefortelling', kp: 'konseptutvikling-programmering' };
+
+for (const [kmId, text] of Object.entries(kompetansemaalData)) {
+  const prefix = kmId.split('-')[0];
+  const fagKey = prefixes[prefix];
+  if (fagKey) {
+    fagKm[fagKey].push([kmId, text as string]);
+  }
+}
+---
+<BaseLayout title="Kompetansemål — VG1 IM">
+  <div style="max-width:1140px;margin:0 auto;padding:48px 32px 80px;">
+    <h1 style="font-size:36px;font-weight:800;letter-spacing:-.025em;margin-bottom:10px;">Kompetansemål</h1>
+    <p style="font-size:16px;color:var(--text2);margin-bottom:40px;">Alle kompetansemål for VG1 Informasjonsteknologi og Medieproduksjon.</p>
+
+    {Object.entries(fagKm).map(([fagKey, kmList]) => {
+      const { color, bg } = getEmneColor(fagKey);
+      const fagLabel = FAG_LABELS[fagKey] || fagKey;
+      return (
+        <div style="margin-bottom:40px;">
+          <h2 style={`font-size:18px;font-weight:700;margin-bottom:16px;display:inline-block;background:${bg};color:${color};padding:4px 16px;border-radius:20px;`}>{fagLabel}</h2>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            {kmList.map(([kmId, kmText]) => {
+              const notes = grouped[kmId] || [];
+              return (
+                <div style="padding:16px 20px;background:var(--surface);border:1px solid var(--border);border-radius:10px;">
+                  <div style="font-size:14px;color:var(--text);margin-bottom:8px;">🎯 <strong>{kmText}</strong></div>
+                  {notes.length > 0 && (
+                    <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                      {notes.map(note => {
+                        const parts = note.id.split('/');
+                        const slug = parts.length > 1 ? parts[1].replace(/\.mdx?$/, '') : note.id;
+                        return (
+                          <a href={`/vg1-im/${note.data.fag}/${slug}`} style="font-size:12px;color:var(--accent);background:var(--bg2);border:1px solid var(--border);padding:3px 10px;border-radius:6px;text-decoration:none;">
+                            {note.data.title}
+                          </a>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      );
+    })}
+  </div>
+</BaseLayout>

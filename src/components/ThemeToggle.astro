@@ -1,0 +1,21 @@
+<script is:inline>
+  const themeToggle = document.querySelector('.theme-toggle');
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.dataset.theme;
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      localStorage.setItem('theme', next);
+    });
+  }
+</script>
+<button class="theme-toggle" aria-label="Bytt tema" style="background:none;border:none;font-size:18px;cursor:pointer;padding:4px 8px;border-radius:6px;color:var(--text2);">
+  <span class="light-icon">☀️</span>
+  <span class="dark-icon">🌙</span>
+</button>
+<style is:global>
+  [data-theme="dark"] .light-icon { display: none; }
+  [data-theme="light"] .dark-icon { display: none; }
+  [data-theme="dark"] .dark-icon { display: inline; }
+  [data-theme="light"] .light-icon { display: inline; }
+</style>

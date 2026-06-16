@@ -1,0 +1,33 @@
+---
+import Nav from '../components/Nav.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  lang?: string;
+}
+const { title, description = 'VG1 Informasjonsteknologi og Medieproduksjon', lang = 'no' } = Astro.props;
+const currentPath = Astro.url.pathname;
+---
+<!doctype html>
+<html lang={lang}>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <title>{title} — VG1 IM</title>
+  <link rel="icon" type="image/svg+xml" href="/vg1-im/favicon.svg" />
+  <script is:inline>
+    const t = localStorage.getItem('theme') ?? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.dataset.theme = t;
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Hopp til innhold</a>
+  <Nav currentPath={currentPath} />
+  <main id="main" style="position:relative;z-index:1;">
+    <slot />
+  </main>
+</body>
+</html>
