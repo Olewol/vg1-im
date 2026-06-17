@@ -1,43 +1,34 @@
 # Plan: Revisjon av VG1 IM Fagside
 
-## Hva må fikses
+Status: **Gjennomført 17. juni 2026**
 
-### 1. Kompetansemål — tydeligere labelling
-- **Oversiktssiden** (`/kompetansemaal`): behold Udirs ordlyd (allerede OK)
-- **Innholdssider**: bytt ut `tf-01`, `tf-02` med korte, beskrivende forkortelser som sier hva målet handler om (f.eks. `sanntidsproduksjon`, `nettverk-og-subnett`)
+## Hva er gjort
 
-### 2. Flere kilder enn NDLA — research
-Må finne norske kilder som beskriver faginnholdet:
-- **Udir**: veiledning til læreplanen, eksempler på sammenhenger
-- **NDLA × flere**: dybdestoff i hver enkelt ressurs
-- **Elsafari / it-forum.no / digi.no** — bransjestoff tilpasset VG1
-- **Lærebøker**: tittelsøk for VG1 IM, oppgavebanker
-- **Fagfornyelsen**: overordnet del, kjerneelementer
-- **Yrkesfaglitteratur**: kompetanse Norge, bransjestandarder
+### 1. ✅ Kompetansemål — tydeligere labelling
+- **Oversiktssiden** (`/kompetansemaal`): beholdt Udirs ordlyd
+- **Innholdssider**: byttet ut `tf-01`, `tf-02` med beskrivende forkortelser via `km_kort.json`
 
-### 3. Årsplan — TF-fokusert med tverrfaglig merking
-- **Hovedplan** for Teknologiforståelse: alle perioder har TF-mål som primær
-- Når temaet er tverrfaglig: `🎯 TF: [mål] | ⤻ PHF: [mål] | ⤻ KOP: [mål]`
-- **ALDRIG** andre fags mål alene på TF-planen
-- Hvert fag får sin egen plan senere (lavere prioritet)
+### 2. ✅ Flere kilder enn NDLA — forsket på
+- IM Fagboka (docs.iktim.no), Udir kjerneelementer, bransjekilder
 
-### 4. Innholdssider — bedre og mer pedagogisk
-- Lengre, mer beskrivende fagstoff
-- Flere praktiske eksempler, gjerne med kode/pseudokode
-- Tydelig progresjon: grunnleggende → utdypende → avansert
-- Sider skal kunne leses alene (stå på egne ben pedagogisk)
-- Flere temaer / finere oppdeling
+### 3. ✅ Årsplan — TF-fokusert med tverrfaglig merking
+- Revidert og utvidet årsplan med 18 undervisningsperioder for TF
 
-### 5. Prioritering
-1. ✅ Research — finn gode kilder for alle TF-temaer
-2. ✅ Lag kort-ID-er til kompetansemål
-3. ✅ Skriv om årsplanen med TF som primærfag
-4. ✅ Skriv om alle TF-innholdssider (dybde)
-5. Lag separate årsplaner for PHF og KOP (nedprioritert)
-6. Skriv om PHF/KOP-innholdssider (nedprioritert)
+### 4. ✅ 5 nye TF-emner (utvidet fra 13 → 18 TF-emner)
 
-## Uklare punkter å avklare med Ole
-1. Hvordan vil du ha kompetansemål-forkortelsene på innholdssidene? Skal det være f.eks. `sanntidsproduksjon` eller `KM: Sanntidsproduksjon` eller noe annet?
-2. For tverrfaglige tema i TF-planen — skal jeg da opprette en egen tverrfaglig side som sampler målene, eller bare vise dem i årsplan-oversikten?
-3. Skal jeg legge til flere temaer enn det NDLA/Naturfag-rammeverket har? F.eks. kunstig intelligens, personvern i praksis, nettverkssikkerhet med verktøy?
-4. Ønsker du fortsatt at siden for PHF og KOP skal ha noe innhold (selv om prioriteten er lavere), eller skal jeg kun ha Teknologiforståelse-innhold inntil videre?
+| Nytt emne | Dekker | Uker |
+|-----------|--------|------|
+| Brukerenheter og administrasjon | tf-05: enhetsadministrasjon, MDM, komponenter | 6-7 |
+| Sikring mot dataspredning | tf-12: kryptering, backup, tilgangskontroll | 46 |
+| Operativsystemer og programvare | tf-05/03: OS-typer, lisenser, virtualisering | 8-9 |
+| HMS i IT-bransjen | tf-08: ergonomi, el-sikkerhet, brannvern | 15 |
+| Digital infrastruktur og skytjenester | tf-09: servere, datasentre, IaaS/PaaS/SaaS | 39 |
+
+### 5. ✅ Eksisterende emner forbedret
+- **Bærekraft** (tidligere "Bærekraft og HMS"): splittet — kun bærekraft (tf-07), HMS flyttet til eget emne
+
+### 6. ✅ Totalt: 39 sider, 33 kompetansemål, 18 TF-emner
+
+## Gjenstående
+- Årsplaner for PHF og KOP (lavere prioritet)
+- Flere PHF/KOP-innholdssider

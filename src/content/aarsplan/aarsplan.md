@@ -16,11 +16,18 @@ veker:
     kompetansemaal: "🎯 Beskrive, utforske og konfigurere datanettverk med egne subnett"
     type: undervisning
 
-  - uke: [38, 39]
-    tema: "Internett, skytjenester og digital kommunikasjon"
+  - uke: [38]
+    tema: "Internett og skytjenester"
     emne: teknologiforstaelse
     kompetansemaal: "🎯 Gjøre rede for hvordan internett fungerer, og hvordan det blir brukt til kommunikasjon og lagring"
     tverrfaglig: "⤻ KOP: Oppmerkingsspråk og stilsett — internett som plattform for publisering (kp-05)"
+    type: undervisning
+
+  - uke: [39]
+    tema: "Digital infrastruktur — Datasentre, servere og sky"
+    emne: teknologiforstaelse
+    kompetansemaal: "🎯 Forstå digital infrastruktur: servertyper, datasentre, skymodeller (IaaS/PaaS/SaaS) og lastbalansering"
+    tverrfaglig: "⤻ TF-07: Miljøkostnader ved datasentre ⤻ KOP: Webhotell og deployment"
     type: undervisning
 
   - uke: [40]
@@ -35,16 +42,23 @@ veker:
     type: undervisning
 
   - uke: [43, 44]
-    tema: "Datasikkerhet — Trusler, verdier og sårbarheter"
+    tema: "Digitale trusler og sårbarheter"
     emne: teknologiforstaelse
     kompetansemaal: "🎯 Utforske og beskrive digitale trusler, verdier og sårbarheter i samfunnet"
     type: undervisning
 
-  - uke: [45, 46]
-    tema: "Personvern og informasjonssikkerhet"
+  - uke: [45]
+    tema: "Personvern og regelverk"
     emne: teknologiforstaelse
-    kompetansemaal: "🎯 Behandle informasjon og personopplysninger i tråd med regelverk, og vurdere tiltak mot uønsket dataspredning"
-    tverrfaglig: "⤻ PHF: Kildekritikk og etisk refleksjon i egen produksjon (ph-07) · ⤻ KOP: Anvendelse av regelverk og etikk (kp-01)"
+    kompetansemaal: "🎯 Behandle informasjon og personopplysninger i tråd med gjeldende regelverk"
+    tverrfaglig: "⤻ PHF: Kildekritikk og etisk refleksjon i egen produksjon (ph-07)"
+    type: undervisning
+
+  - uke: [46]
+    tema: "Sikring mot dataspredning"
+    emne: teknologiforstaelse
+    kompetansemaal: "🎯 Vurdere, anbefale og kvalitetssikre tiltak som reduserer risiko for uønsket spredning av data"
+    tverrfaglig: "⤻ KOP: Ansvarlig bruk og formidling av innhold — regelverk og etikk (kp-01)"
     type: undervisning
 
   - uke: [47, 48]
@@ -63,7 +77,7 @@ veker:
 
   - uke: [51]
     tema: "Praktisk prosjekt — Juleproduksjon"
-    emne: teknologiforstaelse
+    emne: null
     kompetansemaal: "🎯 Planlegge og gjennomføre en produksjon med bransjefaglige metoder"
     tverrfaglig: "⤻ PHF: Budskap og målgrupper (ph-02) · ⤻ KOP: Praktisk programmering (kp-03)"
     type: prosjekt
@@ -87,16 +101,17 @@ veker:
     type: undervisning
 
   - uke: [6, 7]
-    tema: "Brukerenheter og administrasjonsplattformer"
+    tema: "Brukerenheter og administrasjon"
     emne: teknologiforstaelse
     kompetansemaal: "🎯 Administrere brukerenheter og koble dem til sentrale administrasjonsplattformer"
+    tverrfaglig: "⤻ KOP: Dokumentasjon av faglige prosesser (kp-09)"
     type: undervisning
 
   - uke: [8, 9]
-    tema: "Praktisk IT — Infrastruktur, drift og dokumentasjon"
+    tema: "Operativsystemer og programvare"
     emne: teknologiforstaelse
-    kompetansemaal: "🎯 Anvende bransjefaglige metoder for oppsett, konfigurasjon og vedlikehold av IT-systemer"
-    tverrfaglig: "⤻ KOP: Dokumentasjon av faglige prosesser (kp-09)"
+    kompetansemaal: "🎯 Forstå operativsystemer, programvarelisenser, installasjon og virtualisering"
+    tverrfaglig: "⤻ KOP: Programmeringsmiljø og terminalbruk på ulike OS"
     type: undervisning
 
   - uke: [10]
@@ -104,21 +119,28 @@ veker:
     type: ferie
 
   - uke: [11, 12]
-    tema: "Sikkerhet i dybden — Risikovurdering og beredskap"
+    tema: "Bærekraft i teknologibransjen"
     emne: teknologiforstaelse
-    kompetansemaal: "🎯 Vurdere, anbefale og kvalitetssikre tiltak som reduserer risiko for uønsket spredning av data"
-    tverrfaglig: "⤻ KOP: Ansvarlig bruk og formidling av innhold — regelverk og etikk (kp-01)"
+    kompetansemaal: "🎯 Gjøre rede for hvordan bærekraft påvirker anskaffelse, drift og avhending av utstyr"
+    notat: ["Miljøsertifiseringer og grønne valg", "E-avfall og gjenvinning", "Datasenters miljøpåvirkning"]
     type: undervisning
 
   - uke: [13, 14]
     tema: "Påskeferie"
     type: ferie
 
-  - uke: [15, 16]
-    tema: "Bærekraft og HMS i teknologibransjen"
+  - uke: [15]
+    tema: "HMS i IT-bransjen"
     emne: teknologiforstaelse
-    kompetansemaal: "🎯 Gjøre rede for hvordan bærekraft påvirker anskaffelse, drift og avhending, og gjennomføre HMS-arbeid"
-    notat: ["Bærekraft i IT-bransjen", "Avhending av utstyr", "Arbeidsmiljø og ergonomi"]
+    kompetansemaal: "🎯 Gjennomføre og dokumentere arbeid i tråd med gjeldende bestemmelser for helse, miljø og sikkerhet"
+    notat: ["Ergonomi og stillesittende arbeid", "Elektrisk sikkerhet og brannvern", "Dokumentasjon av HMS-arbeid"]
+    type: undervisning
+
+  - uke: [16]
+    tema: "Praktisk IT — Infrastruktur, drift og dokumentasjon"
+    emne: teknologiforstaelse
+    kompetansemaal: "🎯 Anvende bransjefaglige metoder for oppsett, konfigurasjon og vedlikehold av IT-systemer"
+    tverrfaglig: "⤻ KOP: Dokumentasjon av faglige prosesser (kp-09)"
     type: undervisning
 
   - uke: [17, 18]
