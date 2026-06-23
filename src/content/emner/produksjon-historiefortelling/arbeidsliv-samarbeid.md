@@ -9,6 +9,8 @@ kilder:
   - https://www.nho.no/tema/arbeidsliv/artikler/partssamarbeidet-skaper-jobber-og-bidrar-til-lonnsomhet
   - https://snl.no/trepartssamarbeid
   - https://www.arbeidstilsynet.no/
+  - https://www.parat.com/
+  - https://docs.iktim.no/1IM/
 tags: [arbeidsliv, samarbeid, tariffavtale, trepartssamarbeid, fagforening, arbeidsgiver, arbeidstaker]
 relatert:
   - teknologiforstaelse/bransjefaglige-metoder
@@ -33,7 +35,7 @@ I norsk arbeidsliv er det to hovedparter: **arbeidstakerne** (de ansatte) og **a
 |------|---------------|------------------------|
 | **Arbeidstakerorganisasjoner** | LO, YS, Unio, Akademikerne | De ansatte — jobber for bedre lønn, pensjon, arbeidsvilkår |
 | **Arbeidsgiverorganisasjoner** | NHO, Virke, KS, Spekter | Bedriftene/arbeidsgiverne — jobber for konkurransekraft, fleksibilitet |
-| **Staten** (trepart) | Regjeringen, Arbeidstilsynet | Lover og regler som rammen for alt arbeidsliv |
+| **Staten** (trepart) | Regjeringen, Arbeidstilsynet | Lover og regler som er rammen for alt arbeidsliv |
 
 #### Arbeidstakerorganisasjoner (fagforeninger)
 
@@ -48,7 +50,7 @@ Omtrent **52 %** av norske arbeidstakere er organisert i en fagforening. I offen
 
 #### Arbeidsgiverorganisasjoner
 
-Arbeidsgivere organiserer seg for å stå samlet i forhandlinger med fagforeningene. **NHO** (Næringslivets Hovedorganisasjon) er den største arbeidsgiverorganisasjonen i privat sektor med omtrent 75 % av bedriftene organisert. De tilbyr medlemsbedriftene rådgivning, tariffavtaler og juridisk bistand.
+Arbeidsgivere organiserer seg for å stå samlet i forhandlinger med fagforeningene. **NHO** (Næringslivets Hovedorganisasjon) er den største arbeidsgiverorganisasjonen i privat sektor med omtrent 75 % av bedriftene som medlemmer. De tilbyr medlemsbedriftene rådgivning, tariffavtaler og juridisk bistand.
 
 ---
 
