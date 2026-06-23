@@ -43,7 +43,7 @@ Teknologi og programvare er i konstant endring. Det som var nytt for fem år sid
 - **Brukerforventninger endres:** Folk forventer bedre opplevelser, raskere tjenester og mer personlig tilpasning
 - **Konkurranse:** Selskaper kjemper om å lage de beste produktene
 - **Nye behov:** Pandemi, klimaendringer, sikkerhetstrusler skaper nye teknologibehov
-- **Forskning og innovasjon:** Ny oppdagelser gjør tidligere umulige ting mulig
+- **Forskning og innovasjon:** Nye oppdagelser gjør tidligere umulige ting mulig
 
 ### Utdypende: Hvordan holde seg oppdatert?
 
@@ -96,7 +96,7 @@ For å lykkes i IT- og mediebransjen må du vite hvor og hvordan du finner infor
 Medie- og produksjonsbransjen har gjennomgått store endringer de siste årene:
 
 - **Fra analogt til digitalt:** Alt innhold produseres, lagres og distribueres digitalt
-- **KI i produksjon:** AI-verktøy kan generere bilder, video, musikk og tekst — du må forstå både mulighetene og begrensningene
+| **KI i produksjon:** KI-verktøy kan generere bilder, video, musikk og tekst — du må forstå både mulighetene og begrensningene
 - **Skybasert arbeid:** Samarbeid på tvers av lokasjoner via skytjenester er blitt normen
 - **Automatisering:** Rutineoppgaver i produksjon kan automatiseres, slik at du kan fokusere på det kreative
 - **Nye plattformer:** Nye sosiale medier og distribusjonskanaler dukker opp jevnlig
