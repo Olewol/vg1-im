@@ -154,7 +154,7 @@ Du jobber med videoproduksjon og oppdager at det er dårlig ventilasjon i redige
 
 **Refleksjonsoppgave:**
 
-Forestille deg at du er gründer og starter din egen mediebedrift. Du har fem ansatte. En av dem kommer og sier de vil organisere seg og ha tariffavtale.
+Forestil deg at du er gründer og starter din egen mediebedrift. Du har fem ansatte. En av dem kommer og sier de vil organisere seg og ha tariffavtale.
 - Hva tenker du som arbeidsgiver?
 - Hva tenker du som arbeidstaker?
 - Hvordan kan samarbeid gjøre bedriften bedre?
