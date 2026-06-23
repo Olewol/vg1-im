@@ -32,9 +32,9 @@ Teknologi og programvare er i konstant endring. Det som var nytt for fem år sid
 | Teknologiområde | Da du begynte på ungdomsskolen (ca. 2022) | I dag (2026) |
 |-----------------|-------------------------------------------|--------------|
 | Kunstig intelligens | ChatGPT lansert nylig | KI-verktøy i alt fra bildebehandling til videoredigering |
-| Mobiltelefoner | iPhone 14 | Håndholdte AI-datamaskiner med avanserte kamerafunksjoner |
-| Strømmetjenester | Netflix uten reklame | Reklamefinansierte abonnement, AI-generert innhold |
-| Sosiale medier | Twitter kjøpt opp, TikTok i vekst | Kortvideo dominerer, AI-kuratering styrer feeden |
+| Mobiltelefoner | iPhone 14 | Håndholdte KI-datamaskiner med avanserte kamerafunksjoner |
+| Strømmetjenester | Netflix uten reklame | Reklamefinansierte abonnement, KI-generert innhold |
+| Sosiale medier | Twitter kjøpt opp, TikTok i vekst | Kortvideo dominerer, KI-kuratering styrer feeden |
 | Programvare | Adobe Creative Cloud | KI-assistert kreativ programvare |
 
 **Hvorfor skjer disse endringene?**
@@ -96,7 +96,7 @@ For å lykkes i IT- og mediebransjen må du vite hvor og hvordan du finner infor
 Medie- og produksjonsbransjen har gjennomgått store endringer de siste årene:
 
 - **Fra analogt til digitalt:** Alt innhold produseres, lagres og distribueres digitalt
-| **KI i produksjon:** KI-verktøy kan generere bilder, video, musikk og tekst — du må forstå både mulighetene og begrensningene
+- **KI i produksjon:** KI-verktøy kan generere bilder, video, musikk og tekst — du må forstå både mulighetene og begrensningene
 - **Skybasert arbeid:** Samarbeid på tvers av lokasjoner via skytjenester er blitt normen
 - **Automatisering:** Rutineoppgaver i produksjon kan automatiseres, slik at du kan fokusere på det kreative
 - **Nye plattformer:** Nye sosiale medier og distribusjonskanaler dukker opp jevnlig
@@ -104,7 +104,7 @@ Medie- og produksjonsbransjen har gjennomgått store endringer de siste årene:
 #### Eksempler på teknologiendringer som påvirker PHF-faget
 
 1. **Videoredigering:** Fra dyr programvare på enkeltmaskiner til skybasert KI-assistert redigering som alle kan bruke
-2. **Lydproduksjon:** AI-stemmer kan erstatte voiceover-innspilling; musikkgenerering gir royaltyfri bakgrunnsmusikk
+2. **Lydproduksjon:** KI-stemmer kan erstatte voiceover-innspilling; musikkgenerering gir royaltyfri bakgrunnsmusikk
 3. **Grafisk design:** Kanvas og maler har gjort design tilgjengelig for alle; KI genererer layoutforslag på sekunder
 4. **Historiefortelling:** Nye formater som interaktive historier, 360-video og AR/VR utvider fortellermulighetene
 
@@ -133,7 +133,7 @@ Medie- og produksjonsbransjen har gjennomgått store endringer de siste årene:
 | Aspekt | 2020 | 2026 |
 |--------|------|------|
 | Programvare | Adobe Premiere Pro, Final Cut Pro | Samme + nettleserbaserte verktøy (CapCut, Canva) |
-| KI-funksjoner | Grunnleggende stabilisering | Auto-reframe, tekst-til-video, AI-generert B-roll |
+| KI-funksjoner | Grunnleggende stabilisering | Auto-reframe, tekst-til-video, KI-generert B-roll |
 | Samarbeid | Lokale filer, manuell synk | Skybasert samarbeid, automatisk versjonskontroll |
 | Tilgjengelighet | Dyr lisens, kraftig PC | Gratis/nettbasert, mobilvennlig |
 
