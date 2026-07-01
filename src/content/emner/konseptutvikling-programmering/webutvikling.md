@@ -23,7 +23,18 @@ Du skal bruke oppmerkingsspråk (HTML) og stilsett (CSS) i ulike produksjoner, s
 
 ### Hva er webutvikling?
 
-Webutvikling handler om å lage nettsider og webapplikasjoner. Du jobber med tre hovedteknologier:
+Webutvikling handler om å lage nettsider og webapplikasjoner. Du jobber med tre hovedteknologier som samspiller:
+
+```mermaid
+graph LR
+    A[HTML<br/>Innhold & struktur] --> D[Webside]
+    B[CSS<br/>Design & layout] --> D
+    C[JavaScript<br/>Funksjonalitet] --> D
+    style A fill:#e34c26,color:#fff
+    style B fill:#264de4,color:#fff
+    style C fill:#f7df1e,color:#000
+    style D fill:#2563eb,color:#fff
+```
 
 - **HTML:** Innhold og struktur (overskrifter, tekst, bilder, linker)
 - **CSS:** Design og layout (farger, fonter, plassering)

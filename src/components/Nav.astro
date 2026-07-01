@@ -21,6 +21,7 @@ const links = [
         const isActive = currentPath === link.href || (link.href !== '/vg1-im/' && currentPath.startsWith(link.href));
         return (
           <a href={link.href} style={`font-size:13px;padding:6px 12px;border-radius:6px;text-decoration:none;color:${isActive ? 'var(--accent)' : 'var(--text2)'};font-weight:${isActive ? 600 : 400};white-space:nowrap;transition:color .15s,background .15s;${isActive ? 'background:var(--accent-bg);' : ''}`}
+            aria-current={isActive ? 'page' : undefined}
             onmouseover="this.style.background='var(--bg3)'" onmouseout="this.style.background=this.style.background">
             {link.label}
           </a>

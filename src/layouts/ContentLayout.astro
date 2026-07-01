@@ -76,7 +76,7 @@ const kmFulltekst = kmArray.map(km => kompetansemaalData[km as keyof typeof komp
         <ul style="margin-top:8px;">
           {kilder.map(k => (
             k.startsWith('http') 
-              ? <li><a href={k} target="_blank" rel="noopener noreferrer">{k}</a></li>
+              ? <li><a href={k} target="_blank" rel="noopener noreferrer">{k} <span style="font-size:11px;">(åpnes i ny fane)</span></a></li>
               : <li>{k}</li>
           ))}
         </ul>

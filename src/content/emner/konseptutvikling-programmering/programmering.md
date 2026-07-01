@@ -23,7 +23,20 @@ Du skal bruke programmering til å løse praktiske utfordringer og fortelle inte
 
 ### Hva er programmering?
 
-Programmering handler om å gi instruksjoner til en datamaskin. Du skriver kode i et programmeringsspråk, og datamaskinen utfører instruksjonene.
+Programmering handler om å gi instruksjoner til en datamaskin. Du skriver kode i et programmeringsspråk, og datamaskinen utfører instruksjonene. Hele flyten ser slik ut:
+
+```mermaid
+graph LR
+    A[Du skriver kode] --> B[Compiler/Interpreter]
+    B --> C[Maskinkode]
+    C --> D[CPU utfører]
+    D --> E[Resultat]
+    style A fill:#2563eb,color:#fff
+    style B fill:#7c3aed,color:#fff
+    style C fill:#059669,color:#fff
+    style D fill:#dc2626,color:#fff
+    style E fill:#2563eb,color:#fff
+```
 
 ### Algoritmer
 

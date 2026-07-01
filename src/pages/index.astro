@@ -84,7 +84,6 @@ const fagProgression = [
             const emne = v.emne || '';
             const { color, bg } = getEmneColor(emne);
             const isFerie = v.type === 'ferie';
-            const isEksamen = v.type === 'eksamen';
             const isProsjekt = v.type === 'prosjekt';
             let style = 'background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px 20px;';
             if (isFerie) style += 'opacity:.6;';

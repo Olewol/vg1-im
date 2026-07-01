@@ -7,7 +7,6 @@ export async function getStaticPaths() {
   const notes = await getCollection('emner', e => e.data.public !== false);
   return notes.map(note => {
     const parts = note.id.split('/');
-    const emne = parts[0];
     const slug = slugify(parts[1].replace(/\.mdx?$/, ''));
     const fag = note.data.fag;
     return { params: { fag, slug }, props: { note } };

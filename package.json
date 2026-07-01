@@ -10,7 +10,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "test": "echo 'no tests yet'"
+    "test": "python3 scripts/validate-content.py"
   },
   "dependencies": {
     "@astro-community/astro-embed-youtube": "^0.5.10",
